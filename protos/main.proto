@@ -1,0 +1,13 @@
+syntax = "proto3";
+package com.metacube.prateek;
+
+message QueryRequest {
+}
+
+message QueryResponse {
+    string sqlData = 1;
+}
+
+service SqlService {
+    rpc query (QueryRequest) returns (QueryResponse);
+}
