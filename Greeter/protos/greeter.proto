@@ -49,6 +49,23 @@ message HelloResponse {
     string greeting = 1;
 }
 
+message QueryRequest {
+}
+
+message QueryResponse {
+    string sqlData = 1;
+}
+
+message InsertRequest {
+    string name = 1;
+    double price = 2;
+}
+
+message InsertResponse {
+}
+
 service GreetingService {
     rpc greeting (HelloRequest) returns (HelloResponse);
+    rpc query (QueryRequest) returns (QueryResponse);
+    rpc insert (InsertRequest) returns (InsertResponse);
 }

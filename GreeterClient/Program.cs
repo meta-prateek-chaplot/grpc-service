@@ -47,17 +47,22 @@ namespace GreeterClient
             var client = new GreetingService.GreetingServiceClient(channel);
 
             // Create a request
-            var request = new HelloRequest{
+            var request = new HelloRequest {
                 Name = "Mete - on C#",
                 Age = 34,
                 Sentiment = Sentiment.Happy
             };
 
+            var request2 = new QueryRequest {
+            };
+
             // Send the request
             Console.WriteLine("GreeterClient sending request");
-            var response = client.greeting(request);
+            //var response = client.greeting(request);
+            var response2 = client.query(request2);
 
-            Console.WriteLine("GreeterClient received response: " + response.Greeting);
+            //Console.WriteLine("GreeterClient received response: " + response.Greeting);
+            Console.WriteLine("GreeterClient received response: " + response2.SqlData);
 
             // Shutdown
             channel.ShutdownAsync().Wait();
