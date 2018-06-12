@@ -12,7 +12,6 @@ D:\grpc-service\Greeter\bin\Debug\System.Interactive.Async.dll
 D:\grpc-service\Greeter\bin\Debug\Google.Protobuf.xml
 D:\grpc-service\Greeter\bin\Debug\Grpc.Core.xml
 D:\grpc-service\Greeter\bin\Debug\System.Interactive.Async.xml
-D:\grpc-service\Greeter\obj\Debug\Greeter.csprojAssemblyReference.cache
 D:\grpc-service\Greeter\obj\Debug\Greeter.csproj.CoreCompileInputs.cache
 D:\grpc-service\Greeter\obj\Debug\Greeter.csproj.CopyComplete
 D:\grpc-service\Greeter\obj\Debug\Greeter.dll

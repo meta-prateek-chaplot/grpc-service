@@ -53,16 +53,26 @@ namespace GreeterClient
                 Sentiment = Sentiment.Happy
             };
 
-            var request2 = new QueryRequest {
+            var QueryRequest = new QueryRequest {
+            };
+
+            var InsertRequest = new InsertRequest {
+                Name = "Refrigerator",
+                Price = 1599.00
             };
 
             // Send the request
             Console.WriteLine("GreeterClient sending request");
             //var response = client.greeting(request);
-            var response2 = client.query(request2);
+            var QueryResponse = client.query(QueryRequest);
+            var response = client.insert(InsertRequest);
 
             //Console.WriteLine("GreeterClient received response: " + response.Greeting);
-            Console.WriteLine("GreeterClient received response: " + response2.SqlData);
+            Console.WriteLine("GreeterClient received response: \n" + QueryResponse.SqlData);
+            Console.WriteLine("GreeterClient received response: Item added");
+
+            QueryResponse = client.query(QueryRequest);
+            Console.WriteLine("GreeterClient received response: \n" + QueryResponse.SqlData);
 
             // Shutdown
             channel.ShutdownAsync().Wait();

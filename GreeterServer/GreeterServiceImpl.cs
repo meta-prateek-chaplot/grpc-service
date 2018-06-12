@@ -34,9 +34,16 @@ namespace GreeterServer
 {
     public class GreeterServiceImpl : GreetingService.GreetingServiceBase
     {
+        public override Task<InsertResponse> insert(InsertRequest request, ServerCallContext context)
+        {
+            Program.InsertCommand(request.Name, request.Price);
+            return Task.FromResult(new InsertResponse{ });
+        }
+
         public override Task<QueryResponse> query(QueryRequest request, ServerCallContext context)
         {
-            return Task.FromResult(new QueryResponse { SqlData = "Working..." });
+            
+            return Task.FromResult(new QueryResponse { SqlData = Program.QueryCommand() });
         }
 
         public override Task<HelloResponse> greeting(HelloRequest request, ServerCallContext context)

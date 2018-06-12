@@ -40,8 +40,4 @@ set TOOLS_PATH=packages\Grpc.Tools.1.8.0\tools\windows_x86
 
 %TOOLS_PATH%\protoc.exe Greeter\protos\greeter.proto --grpc_out Greeter --plugin=protoc-gen-grpc=%TOOLS_PATH%\grpc_csharp_plugin.exe
 
-%TOOLS_PATH%\protoc.exe Chat\protos\chat.proto --csharp_out Chat 
-
-%TOOLS_PATH%\protoc.exe Chat\protos\chat.proto Chat Chat\protos\chat.proto --grpc_out Chat --plugin=protoc-gen-grpc=%TOOLS_PATH%\grpc_csharp_plugin.exe
-
 endlocal

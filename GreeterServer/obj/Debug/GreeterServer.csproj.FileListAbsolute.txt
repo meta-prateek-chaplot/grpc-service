@@ -19,3 +19,6 @@ D:\grpc-service\GreeterServer\obj\Debug\GreeterServer.csproj.CoreCompileInputs.c
 D:\grpc-service\GreeterServer\obj\Debug\GreeterServer.csproj.CopyComplete
 D:\grpc-service\GreeterServer\obj\Debug\GreeterServer.exe
 D:\grpc-service\GreeterServer\obj\Debug\GreeterServer.pdb
+D:\grpc-service\GreeterServer\bin\Debug\GreeterServer.exe.config
+D:\grpc-service\GreeterServer\bin\Debug\MySql.Data.dll
+D:\grpc-service\GreeterServer\bin\Debug\MySql.Data.xml
